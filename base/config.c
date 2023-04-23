@@ -628,7 +628,7 @@ int read_main_config_file(char *main_config_file) {
 				}
 			}
 
-		else if(!strcmp(variable, "use_agressive_host_checking") || !strcmp(variable, "use_aggressive_host_checking")) {
+		else if(!strcmp(variable, "use_aggressive_host_checking") || !strcmp(variable, "use_aggressive_host_checking")) {
 
 			if(strlen(value) != 1 || value[0] < '0' || value[0] > '1') {
 				asprintf(&error_message, "Illegal value for use_aggressive_host_checking");
